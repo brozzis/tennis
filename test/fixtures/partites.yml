@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  p1: MyString
+  p2: MyString
+  data: 2012-10-10
+  result: MyString
+
+two:
+  p1: MyString
+  p2: MyString
+  data: 2012-10-10
+  result: MyString

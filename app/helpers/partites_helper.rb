@@ -1,0 +1,2 @@
+module PartitesHelper
+end

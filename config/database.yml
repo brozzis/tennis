@@ -2,8 +2,8 @@ development:
   adapter: mysql2
   encoding: utf8
   database: tennis.dev
-  username: root
-  password:
+  username: tennis
+  password: love40
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as 'test' will be erased and
@@ -13,15 +13,15 @@ test:
   adapter: mysql2
   encoding: utf8
   database: temp_test
-  username: root
-  password:
+  username: tennis
+  password: love40
   socket: /tmp/mysql.sock
 
 production:
   adapter: mysql2
   encoding: utf8
   database: tennis
-  username: root
-  password:
+  username: tennis
+  password: love40
   socket: /tmp/mysql.sock
 

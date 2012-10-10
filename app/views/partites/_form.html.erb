@@ -1,0 +1,33 @@
+<%= form_for(@partite) do |f| %>
+  <% if @partite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@partite.errors.count, "error") %> prohibited this partite from being saved:</h2>
+
+      <ul>
+      <% @partite.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :p1 %><br />
+    <%= f.text_field :p1 %>
+  </div>
+  <div class="field">
+    <%= f.label :p2 %><br />
+    <%= f.text_field :p2 %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br />
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :result %><br />
+    <%= f.text_field :result %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

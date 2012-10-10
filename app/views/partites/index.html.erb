@@ -1,0 +1,29 @@
+<h1>Listing partites</h1>
+
+<table>
+  <tr>
+    <th>P1</th>
+    <th>P2</th>
+    <th>Data</th>
+    <th>Result</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @partites.each do |partite| %>
+  <tr>
+    <td><%= partite.p1 %></td>
+    <td><%= partite.p2 %></td>
+    <td><%= partite.data %></td>
+    <td><%= partite.result %></td>
+    <td><%= link_to 'Show', partite %></td>
+    <td><%= link_to 'Edit', edit_partite_path(partite) %></td>
+    <td><%= link_to 'Destroy', partite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Partite', new_partite_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>P1:</b>
+  <%= @partite.p1 %>
+</p>
+
+<p>
+  <b>P2:</b>
+  <%= @partite.p2 %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @partite.data %>
+</p>
+
+<p>
+  <b>Result:</b>
+  <%= @partite.result %>
+</p>
+
+
+<%= link_to 'Edit', edit_partite_path(@partite) %> |
+<%= link_to 'Back', partites_path %>
